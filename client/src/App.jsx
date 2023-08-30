@@ -1,18 +1,22 @@
 import { useState } from 'react'
-import './App.css'
+
 import CardJoin from './components/CardJoin'
-import Chat from './components/Chat';
+import Chat from './components/Chat/Chat';
 
 function App() {
   const [visibility, setVisibility] = useState(false);
   const [socket, setSocket] = useState(null);
 
   return (
-   <div className="App">
+   <div className="h-screen vh-100 bg-white dark:bg-gray-900">
     {visibility ? 
-      <Chat socket={socket}/> 
+      
+        <Chat socket={socket}/> 
+     
       : 
-      <CardJoin setVisibility={setVisibility} setSocket={setSocket}/> 
+      <div className="flex justify-center items-center h-full">
+        <CardJoin setVisibility={setVisibility} setSocket={setSocket}/> 
+      </div>
     }
       
    </div>
