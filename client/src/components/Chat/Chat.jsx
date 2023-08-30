@@ -6,9 +6,11 @@ import CardChatMessage from './CardChatMessage'
 function Chat({socket}) {
 
   return (
-    <div>
+    <div className=''>
       <Header></Header>
-      <CardChatMessage socket={socket}/>
+      <div className="pt-16">
+        <CardChatMessage socket={socket} />
+      </div>
     </div>
   )
 }
