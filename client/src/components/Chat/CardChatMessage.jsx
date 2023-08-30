@@ -37,30 +37,13 @@ function CardChatMessage({socket}) {
     <div className='flex justify-between items-center'>
 
     <div class="flex flex-col flex-grow p-12  dark:bg-gray-900 overflow-y-auto" style={{ maxHeight: 'calc(100vh - 150px)' }}>
-        {/* {
+         {
             messageList.map((msg)=>(
                 socket.id === msg.authorId ? <MessageChatSender msg={msg.text} /> : <MessageChat msg={msg.text} author={msg.author}/>
             ))
-        } */}
+        } 
 
-        <MessageChat msg={"BLALALALALALALALALALALAL"}/>
-        <MessageChat msg={"BLALALALALALALALALALALAL"}/>
-        <MessageChat msg={"BLALALALALALALALALALALAL"}/>
-        <MessageChat msg={"BLALALALALALALALALALALAL"}/>
-        <MessageChat msg={"BLALALALALALALALALALALAL"}/>
-        <MessageChat msg={"BLALALALALALALALALALALAL"}/>
-        <MessageChat msg={"BLALALALALALALALALALALAL"}/>
-        <MessageChat msg={"BLALALALALALALALALALALAL"}/>
-        <MessageChat msg={"BLALALALALALALALALALALAL"}/>
-        <MessageChat msg={"BLALALALALALALALALALALAL"}/>
-        <MessageChat msg={"BLALALALALALALALALALALAL"}/>
-        <MessageChat msg={"BLALALALALALALALALALALAL"}/>
-        <MessageChat msg={"BLALALALALALALALALALALAL"}/>
-        <MessageChat msg={"BLALALALALALALALALALALAL"}/>
-        <MessageChat msg={"BLALALALALALALALALALALAL"}/>
-        <MessageChat msg={"BLALALALALALALALALALALAL"}/>
-        <MessageChat msg={"BLALALALALALALALALALALAL"}/>
-        <MessageChat msg={"BLALALALALALALALALALALAL"}/>
+        
         
     </div>
 

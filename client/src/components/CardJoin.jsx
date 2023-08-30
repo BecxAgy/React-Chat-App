@@ -35,10 +35,10 @@ function CardJoin({setVisibility, setSocket}) {
     <LogoText/>
 
       
-      <label className="block text-gray-700 text-sm font-bold m-8 dark:text-blue-700" for="password">
+      <label className="block text-gray-700 text-sm font-bold m-8 dark:text-blue-700" >
         Antes de entrar, indentifique-se!
       </label>
-      <input ref={usernameRef} className="shadow appearance-none border border-blue-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-700 text-white" placeholder='Seu nome :)'/>
+      <input ref={usernameRef} className="shadow appearance-none border border-blue-500 text-blue-800 rounded w-full py-2 px-3 mb-3 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-700 " placeholder='Seu nome :)'/>
       
       <Button text={'Entrar'} func={handleSubmit}/>
 
