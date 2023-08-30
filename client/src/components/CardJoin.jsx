@@ -16,7 +16,8 @@ function CardJoin({setVisibility, setSocket}) {
         const username = usernameRef.current.value;
         if(!username.trim()) return;
         
-        const socket = await io.connect('http://localhost:3001');
+        const socket = await io.connect('https://becarealchatbackend.onrender.com/');
+        console.log("🚀 ~ file: CardJoin.jsx:20 ~ handleSubmit ~ socket:", socket)
 
         socket.emit('set_username', username);
         setSocket(socket);
